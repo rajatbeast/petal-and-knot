@@ -1,0 +1,82 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --cream: #F5F0E8;
+  --beige: #E8DFD0;
+  --brown: #8B6F52;
+  --dark-brown: #4A3728;
+  --sage: #7A8C72;
+  --warm-white: #FAF7F2;
+  --text-dark: #2C1F14;
+  --text-mid: #6B5040;
+  --text-light: #9C7E67;
+  --accent: #C49A6C;
+  --danger: #c0392b;
+  --success: #27ae60;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Jost', sans-serif;
+  background: var(--warm-white);
+  color: var(--text-dark);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
+
+a { text-decoration: none; color: inherit; }
+
+input, select, textarea, button { font-family: 'Jost', sans-serif; }
+
+.btn-primary {
+  display: inline-block;
+  background: var(--dark-brown); color: var(--cream);
+  padding: 13px 28px; font-size: 12px;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  cursor: pointer; border: none; border-radius: 2px;
+  transition: background 0.2s; font-family: 'Jost', sans-serif;
+}
+.btn-primary:hover { background: var(--brown); }
+.btn-primary:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.btn-outline {
+  display: inline-block;
+  background: transparent; color: var(--dark-brown);
+  padding: 12px 28px; font-size: 12px;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  cursor: pointer; border: 1px solid var(--dark-brown); border-radius: 2px;
+  transition: all 0.2s; font-family: 'Jost', sans-serif;
+}
+.btn-outline:hover { background: var(--dark-brown); color: var(--cream); }
+
+.form-group { margin-bottom: 1.25rem; }
+.form-group label {
+  display: block; font-size: 11px;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--text-light); margin-bottom: 6px;
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  background: var(--cream); border: 1px solid var(--beige);
+  padding: 11px 14px; font-size: 14px; color: var(--text-dark);
+  border-radius: 2px; outline: none; transition: border-color 0.2s;
+  font-family: 'Jost', sans-serif;
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus { border-color: var(--brown); }
+.form-group textarea { min-height: 90px; resize: vertical; }
+
+.error-msg { color: var(--danger); font-size: 13px; margin-top: 6px; }
+.success-msg { color: var(--success); font-size: 13px; margin-top: 6px; }
+
+.page-loader {
+  min-height: 60vh; display: flex;
+  align-items: center; justify-content: center;
+  color: var(--text-light); font-size: 14px;
+  letter-spacing: 0.1em;
+}
