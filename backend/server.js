@@ -11,7 +11,7 @@ app.use(
   cors({
     origin:
       process.env.NODE_ENV === "production"
-        ? ["https://petal-and-knot.onrender.com/"]
+        ? ["https://petalknot.vercel.app"]
         : ["http://localhost:3000"],
     credentials: true,
   }),
