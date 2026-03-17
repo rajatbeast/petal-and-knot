@@ -35,3 +35,16 @@
   .nav-links a { font-size: 11px; }
   .nav-auth .nav-username { display: none; }
 }
+
+.cart-btn {
+  position: relative; background: none; border: none;
+  font-size: 20px; cursor: pointer; padding: 4px 8px;
+}
+.cart-badge {
+  position: absolute; top: -2px; right: -2px;
+  background: var(--dark-brown); color: var(--cream);
+  font-size: 10px; width: 16px; height: 16px;
+  border-radius: 50%; display: flex;
+  align-items: center; justify-content: center;
+  font-family: 'Jost', sans-serif;
+}
