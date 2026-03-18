@@ -1,13 +1,19 @@
-import { Link } from 'react-router-dom';
-import './Footer.css';
+import { Link } from "react-router-dom";
+import "./Footer.css";
 
 export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer-inner">
         <div className="footer-brand">
-          <div className="footer-logo">Petal <em>&</em> Knot</div>
-          <p>Handcrafted with love in Indore, India.<br />Boho accessories, floral jewellery & artisan candles.</p>
+          <div className="footer-logo">
+            Meraki <em></em> Knotora
+          </div>
+          <p>
+            Handcrafted with love in Indore, India.
+            <br />
+            Boho accessories, floral jewellery & artisan candles.
+          </p>
         </div>
         <div className="footer-links">
           <h4>Explore</h4>
@@ -29,11 +35,16 @@ export default function Footer() {
           <p>📍 Indore, MP, India</p>
           <p>📦 Shipping across India</p>
           <p>🎁 Custom orders welcome</p>
-          <Link to="/contact" className="footer-cta">Send an Enquiry →</Link>
+          <Link to="/contact" className="footer-cta">
+            Send an Enquiry →
+          </Link>
         </div>
       </div>
       <div className="footer-bottom">
-        <p>© {new Date().getFullYear()} Petal & Knot · Handmade with love · All rights reserved</p>
+        <p>
+          © {new Date().getFullYear()} Meraki Knotora · Handmade with love · All
+          rights reserved
+        </p>
       </div>
     </footer>
   );

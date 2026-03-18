@@ -17,7 +17,7 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       <Link to="/" className="nav-logo">
-        Petal <span>&</span> Knot
+        Meraki <span></span> Knotora
       </Link>
       <div className="nav-links">
         <Link to="/" className={isActive("/")}>
